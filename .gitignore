@@ -1,0 +1,12 @@
+xcuserdata
+Pods/*
+.DS_Store
+*.xcworkspacedata
+*.xccheckout
+xcuserdata/
+Pods/
+Pods/*
+/Pods
+Assets/
+Assets/*
+/Assets

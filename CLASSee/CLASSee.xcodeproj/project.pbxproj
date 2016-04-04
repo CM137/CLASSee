@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		830625871CA0F30900331716 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830625861CA0F30900331716 /* AppDelegate.swift */; };
+		830625891CA0F30900331716 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830625881CA0F30900331716 /* ViewController.swift */; };
+		8306258C1CA0F30900331716 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8306258A1CA0F30900331716 /* Main.storyboard */; };
+		8306258E1CA0F30900331716 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8306258D1CA0F30900331716 /* Assets.xcassets */; };
+		830625911CA0F30900331716 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8306258F1CA0F30900331716 /* LaunchScreen.storyboard */; };
+		8306259C1CA0F30A00331716 /* CLASSeeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8306259B1CA0F30A00331716 /* CLASSeeTests.swift */; };
+		830625A71CA0F30A00331716 /* CLASSeeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830625A61CA0F30A00331716 /* CLASSeeUITests.swift */; };
+		830625AC1CA0F30A00331716 /* CLASSee WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 830625AB1CA0F30A00331716 /* CLASSee WatchKit App.app */; };
+		830625B21CA0F30A00331716 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 830625B01CA0F30A00331716 /* Interface.storyboard */; };
+		830625B41CA0F30A00331716 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830625B31CA0F30A00331716 /* Assets.xcassets */; };
+		830625BB1CA0F30A00331716 /* CLASSee WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 830625BA1CA0F30A00331716 /* CLASSee WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		830625C21CA0F30A00331716 /* CoursesInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830625C11CA0F30A00331716 /* CoursesInterfaceController.swift */; };
+		830625C41CA0F30A00331716 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830625C31CA0F30A00331716 /* ExtensionDelegate.swift */; };
+		830625C61CA0F30A00331716 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830625C51CA0F30A00331716 /* NotificationController.swift */; };
+		830625C81CA0F30A00331716 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830625C71CA0F30A00331716 /* GlanceController.swift */; };
+		830625CA1CA0F30A00331716 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830625C91CA0F30A00331716 /* ComplicationController.swift */; };
+		830625CC1CA0F30A00331716 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 830625CB1CA0F30A00331716 /* Assets.xcassets */; };
+		835771B01CB17671009868C7 /* StudentsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 835771AF1CB17671009868C7 /* StudentsRow.swift */; };
+		83B7B7F31CA37EC700F04931 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83B7B7F21CA37EC700F04931 /* libsqlite3.tbd */; };
+		83C717CD1CAB7A71006D5227 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C717CC1CAB7A71006D5227 /* Student.swift */; };
+		83C717CF1CAB7A83006D5227 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C717CE1CAB7A83006D5227 /* Course.swift */; };
+		83C717D11CAB7F9D006D5227 /* CourseMenuInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C717D01CAB7F9D006D5227 /* CourseMenuInterfaceController.swift */; };
+		83C717D31CAB7FFE006D5227 /* AttendanceInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C717D21CAB7FFE006D5227 /* AttendanceInterfaceController.swift */; };
+		83C717D51CAB8010006D5227 /* ObservationsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C717D41CAB8010006D5227 /* ObservationsInterfaceController.swift */; };
+		83C717D61CAB818D006D5227 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C717CC1CAB7A71006D5227 /* Student.swift */; };
+		83C717D71CAB8194006D5227 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C717CE1CAB7A83006D5227 /* Course.swift */; };
+		83C717DB1CAB83FE006D5227 /* CoursesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C717DA1CAB83FE006D5227 /* CoursesRow.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		830625981CA0F30A00331716 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8306257B1CA0F30900331716 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 830625821CA0F30900331716;
+			remoteInfo = CLASSee;
+		};
+		830625A31CA0F30A00331716 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8306257B1CA0F30900331716 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 830625821CA0F30900331716;
+			remoteInfo = CLASSee;
+		};
+		830625AD1CA0F30A00331716 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8306257B1CA0F30900331716 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 830625AA1CA0F30A00331716;
+			remoteInfo = "CLASSee WatchKit App";
+		};
+		830625BC1CA0F30A00331716 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8306257B1CA0F30900331716 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 830625B91CA0F30A00331716;
+			remoteInfo = "CLASSee WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		830625D31CA0F30A00331716 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				830625BB1CA0F30A00331716 /* CLASSee WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830625D71CA0F30A00331716 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				830625AC1CA0F30A00331716 /* CLASSee WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		830625831CA0F30900331716 /* CLASSee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLASSee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		830625861CA0F30900331716 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		830625881CA0F30900331716 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8306258B1CA0F30900331716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8306258D1CA0F30900331716 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		830625901CA0F30900331716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		830625921CA0F30900331716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830625971CA0F30A00331716 /* CLASSeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLASSeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8306259B1CA0F30A00331716 /* CLASSeeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLASSeeTests.swift; sourceTree = "<group>"; };
+		8306259D1CA0F30A00331716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830625A21CA0F30A00331716 /* CLASSeeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CLASSeeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		830625A61CA0F30A00331716 /* CLASSeeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLASSeeUITests.swift; sourceTree = "<group>"; };
+		830625A81CA0F30A00331716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830625AB1CA0F30A00331716 /* CLASSee WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CLASSee WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		830625B11CA0F30A00331716 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		830625B31CA0F30A00331716 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		830625B51CA0F30A00331716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		830625BA1CA0F30A00331716 /* CLASSee WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CLASSee WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		830625C01CA0F30A00331716 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		830625C11CA0F30A00331716 /* CoursesInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesInterfaceController.swift; sourceTree = "<group>"; };
+		830625C31CA0F30A00331716 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		830625C51CA0F30A00331716 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		830625C71CA0F30A00331716 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		830625C91CA0F30A00331716 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		830625CB1CA0F30A00331716 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		830625CD1CA0F30A00331716 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		835771AF1CB17671009868C7 /* StudentsRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentsRow.swift; sourceTree = "<group>"; };
+		83B7B7F21CA37EC700F04931 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		83C717CC1CAB7A71006D5227 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		83C717CE1CAB7A83006D5227 /* Course.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
+		83C717D01CAB7F9D006D5227 /* CourseMenuInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CourseMenuInterfaceController.swift; sourceTree = "<group>"; };
+		83C717D21CAB7FFE006D5227 /* AttendanceInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceInterfaceController.swift; sourceTree = "<group>"; };
+		83C717D41CAB8010006D5227 /* ObservationsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservationsInterfaceController.swift; sourceTree = "<group>"; };
+		83C717DA1CAB83FE006D5227 /* CoursesRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesRow.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		830625801CA0F30900331716 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83B7B7F31CA37EC700F04931 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830625941CA0F30A00331716 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8306259F1CA0F30A00331716 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830625B71CA0F30A00331716 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8306257A1CA0F30900331716 = {
+			isa = PBXGroup;
+			children = (
+				83B7B7F21CA37EC700F04931 /* libsqlite3.tbd */,
+				830625851CA0F30900331716 /* CLASSee */,
+				8306259A1CA0F30A00331716 /* CLASSeeTests */,
+				830625A51CA0F30A00331716 /* CLASSeeUITests */,
+				830625AF1CA0F30A00331716 /* CLASSee Watchkit App */,
+				830625BE1CA0F30A00331716 /* CLASSee WatchKit Extension */,
+				830625841CA0F30900331716 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		830625841CA0F30900331716 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				830625831CA0F30900331716 /* CLASSee.app */,
+				830625971CA0F30A00331716 /* CLASSeeTests.xctest */,
+				830625A21CA0F30A00331716 /* CLASSeeUITests.xctest */,
+				830625AB1CA0F30A00331716 /* CLASSee WatchKit App.app */,
+				830625BA1CA0F30A00331716 /* CLASSee WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		830625851CA0F30900331716 /* CLASSee */ = {
+			isa = PBXGroup;
+			children = (
+				830625861CA0F30900331716 /* AppDelegate.swift */,
+				830625881CA0F30900331716 /* ViewController.swift */,
+				8306258A1CA0F30900331716 /* Main.storyboard */,
+				8306258D1CA0F30900331716 /* Assets.xcassets */,
+				8306258F1CA0F30900331716 /* LaunchScreen.storyboard */,
+				830625921CA0F30900331716 /* Info.plist */,
+				83C717CC1CAB7A71006D5227 /* Student.swift */,
+				83C717CE1CAB7A83006D5227 /* Course.swift */,
+			);
+			path = CLASSee;
+			sourceTree = "<group>";
+		};
+		8306259A1CA0F30A00331716 /* CLASSeeTests */ = {
+			isa = PBXGroup;
+			children = (
+				8306259B1CA0F30A00331716 /* CLASSeeTests.swift */,
+				8306259D1CA0F30A00331716 /* Info.plist */,
+			);
+			path = CLASSeeTests;
+			sourceTree = "<group>";
+		};
+		830625A51CA0F30A00331716 /* CLASSeeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				830625A61CA0F30A00331716 /* CLASSeeUITests.swift */,
+				830625A81CA0F30A00331716 /* Info.plist */,
+			);
+			path = CLASSeeUITests;
+			sourceTree = "<group>";
+		};
+		830625AF1CA0F30A00331716 /* CLASSee Watchkit App */ = {
+			isa = PBXGroup;
+			children = (
+				830625B01CA0F30A00331716 /* Interface.storyboard */,
+				830625B31CA0F30A00331716 /* Assets.xcassets */,
+				830625B51CA0F30A00331716 /* Info.plist */,
+			);
+			name = "CLASSee Watchkit App";
+			path = "CLASSee WatchKit App";
+			sourceTree = "<group>";
+		};
+		830625BE1CA0F30A00331716 /* CLASSee WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				83C717D21CAB7FFE006D5227 /* AttendanceInterfaceController.swift */,
+				830625C11CA0F30A00331716 /* CoursesInterfaceController.swift */,
+				83C717D01CAB7F9D006D5227 /* CourseMenuInterfaceController.swift */,
+				83C717D41CAB8010006D5227 /* ObservationsInterfaceController.swift */,
+				830625C31CA0F30A00331716 /* ExtensionDelegate.swift */,
+				830625C51CA0F30A00331716 /* NotificationController.swift */,
+				830625C71CA0F30A00331716 /* GlanceController.swift */,
+				830625C91CA0F30A00331716 /* ComplicationController.swift */,
+				830625CB1CA0F30A00331716 /* Assets.xcassets */,
+				830625CD1CA0F30A00331716 /* Info.plist */,
+				830625BF1CA0F30A00331716 /* Supporting Files */,
+				83C717DA1CAB83FE006D5227 /* CoursesRow.swift */,
+				835771AF1CB17671009868C7 /* StudentsRow.swift */,
+			);
+			path = "CLASSee WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		830625BF1CA0F30A00331716 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				830625C01CA0F30A00331716 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		830625821CA0F30900331716 /* CLASSee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830625D81CA0F30A00331716 /* Build configuration list for PBXNativeTarget "CLASSee" */;
+			buildPhases = (
+				8306257F1CA0F30900331716 /* Sources */,
+				830625801CA0F30900331716 /* Frameworks */,
+				830625811CA0F30900331716 /* Resources */,
+				830625D71CA0F30A00331716 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				830625AE1CA0F30A00331716 /* PBXTargetDependency */,
+			);
+			name = CLASSee;
+			productName = CLASSee;
+			productReference = 830625831CA0F30900331716 /* CLASSee.app */;
+			productType = "com.apple.product-type.application";
+		};
+		830625961CA0F30A00331716 /* CLASSeeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830625DB1CA0F30A00331716 /* Build configuration list for PBXNativeTarget "CLASSeeTests" */;
+			buildPhases = (
+				830625931CA0F30A00331716 /* Sources */,
+				830625941CA0F30A00331716 /* Frameworks */,
+				830625951CA0F30A00331716 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				830625991CA0F30A00331716 /* PBXTargetDependency */,
+			);
+			name = CLASSeeTests;
+			productName = CLASSeeTests;
+			productReference = 830625971CA0F30A00331716 /* CLASSeeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		830625A11CA0F30A00331716 /* CLASSeeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830625DE1CA0F30A00331716 /* Build configuration list for PBXNativeTarget "CLASSeeUITests" */;
+			buildPhases = (
+				8306259E1CA0F30A00331716 /* Sources */,
+				8306259F1CA0F30A00331716 /* Frameworks */,
+				830625A01CA0F30A00331716 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				830625A41CA0F30A00331716 /* PBXTargetDependency */,
+			);
+			name = CLASSeeUITests;
+			productName = CLASSeeUITests;
+			productReference = 830625A21CA0F30A00331716 /* CLASSeeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		830625AA1CA0F30A00331716 /* CLASSee WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830625D41CA0F30A00331716 /* Build configuration list for PBXNativeTarget "CLASSee WatchKit App" */;
+			buildPhases = (
+				830625A91CA0F30A00331716 /* Resources */,
+				830625D31CA0F30A00331716 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				830625BD1CA0F30A00331716 /* PBXTargetDependency */,
+			);
+			name = "CLASSee WatchKit App";
+			productName = "CLASSee WatchKit App";
+			productReference = 830625AB1CA0F30A00331716 /* CLASSee WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		830625B91CA0F30A00331716 /* CLASSee WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 830625D01CA0F30A00331716 /* Build configuration list for PBXNativeTarget "CLASSee WatchKit Extension" */;
+			buildPhases = (
+				830625B61CA0F30A00331716 /* Sources */,
+				830625B71CA0F30A00331716 /* Frameworks */,
+				830625B81CA0F30A00331716 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CLASSee WatchKit Extension";
+			productName = "CLASSee WatchKit Extension";
+			productReference = 830625BA1CA0F30A00331716 /* CLASSee WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8306257B1CA0F30900331716 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "West Chester University";
+				TargetAttributes = {
+					830625821CA0F30900331716 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 89W3WJA9LH;
+					};
+					830625961CA0F30A00331716 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 830625821CA0F30900331716;
+					};
+					830625A11CA0F30A00331716 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 830625821CA0F30900331716;
+					};
+					830625AA1CA0F30A00331716 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 89W3WJA9LH;
+					};
+					830625B91CA0F30A00331716 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 89W3WJA9LH;
+					};
+				};
+			};
+			buildConfigurationList = 8306257E1CA0F30900331716 /* Build configuration list for PBXProject "CLASSee" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8306257A1CA0F30900331716;
+			productRefGroup = 830625841CA0F30900331716 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				830625821CA0F30900331716 /* CLASSee */,
+				830625961CA0F30A00331716 /* CLASSeeTests */,
+				830625A11CA0F30A00331716 /* CLASSeeUITests */,
+				830625AA1CA0F30A00331716 /* CLASSee WatchKit App */,
+				830625B91CA0F30A00331716 /* CLASSee WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		830625811CA0F30900331716 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830625911CA0F30900331716 /* LaunchScreen.storyboard in Resources */,
+				8306258E1CA0F30900331716 /* Assets.xcassets in Resources */,
+				8306258C1CA0F30900331716 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830625951CA0F30A00331716 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830625A01CA0F30A00331716 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830625A91CA0F30A00331716 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830625B41CA0F30A00331716 /* Assets.xcassets in Resources */,
+				830625B21CA0F30A00331716 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830625B81CA0F30A00331716 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830625CC1CA0F30A00331716 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8306257F1CA0F30900331716 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830625891CA0F30900331716 /* ViewController.swift in Sources */,
+				83C717CF1CAB7A83006D5227 /* Course.swift in Sources */,
+				830625871CA0F30900331716 /* AppDelegate.swift in Sources */,
+				83C717CD1CAB7A71006D5227 /* Student.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830625931CA0F30A00331716 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8306259C1CA0F30A00331716 /* CLASSeeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8306259E1CA0F30A00331716 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830625A71CA0F30A00331716 /* CLASSeeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830625B61CA0F30A00331716 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				830625C61CA0F30A00331716 /* NotificationController.swift in Sources */,
+				83C717DB1CAB83FE006D5227 /* CoursesRow.swift in Sources */,
+				830625C41CA0F30A00331716 /* ExtensionDelegate.swift in Sources */,
+				83C717D71CAB8194006D5227 /* Course.swift in Sources */,
+				83C717D31CAB7FFE006D5227 /* AttendanceInterfaceController.swift in Sources */,
+				830625CA1CA0F30A00331716 /* ComplicationController.swift in Sources */,
+				835771B01CB17671009868C7 /* StudentsRow.swift in Sources */,
+				83C717D61CAB818D006D5227 /* Student.swift in Sources */,
+				83C717D51CAB8010006D5227 /* ObservationsInterfaceController.swift in Sources */,
+				83C717D11CAB7F9D006D5227 /* CourseMenuInterfaceController.swift in Sources */,
+				830625C21CA0F30A00331716 /* CoursesInterfaceController.swift in Sources */,
+				830625C81CA0F30A00331716 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		830625991CA0F30A00331716 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 830625821CA0F30900331716 /* CLASSee */;
+			targetProxy = 830625981CA0F30A00331716 /* PBXContainerItemProxy */;
+		};
+		830625A41CA0F30A00331716 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 830625821CA0F30900331716 /* CLASSee */;
+			targetProxy = 830625A31CA0F30A00331716 /* PBXContainerItemProxy */;
+		};
+		830625AE1CA0F30A00331716 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 830625AA1CA0F30A00331716 /* CLASSee WatchKit App */;
+			targetProxy = 830625AD1CA0F30A00331716 /* PBXContainerItemProxy */;
+		};
+		830625BD1CA0F30A00331716 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 830625B91CA0F30A00331716 /* CLASSee WatchKit Extension */;
+			targetProxy = 830625BC1CA0F30A00331716 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8306258A1CA0F30900331716 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8306258B1CA0F30900331716 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8306258F1CA0F30900331716 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				830625901CA0F30900331716 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		830625B01CA0F30A00331716 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				830625B11CA0F30A00331716 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		830625CE1CA0F30A00331716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		830625CF1CA0F30A00331716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		830625D11CA0F30A00331716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "CLASSee WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wcupa.inov8.CLASSee.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		830625D21CA0F30A00331716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "CLASSee WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wcupa.inov8.CLASSee.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		830625D51CA0F30A00331716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = CLASSee_WatchKit_Extension;
+				INFOPLIST_FILE = "CLASSee WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wcupa.inov8.CLASSee.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		830625D61CA0F30A00331716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = CLASSee_WatchKit_Extension;
+				INFOPLIST_FILE = "CLASSee WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wcupa.inov8.CLASSee.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		830625D91CA0F30A00331716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = CLASSee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wcupa.inov8.CLASSee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		830625DA1CA0F30A00331716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = CLASSee/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wcupa.inov8.CLASSee;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		830625DC1CA0F30A00331716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CLASSeeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wcupa.inov8.CLASSeeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CLASSee.app/CLASSee";
+			};
+			name = Debug;
+		};
+		830625DD1CA0F30A00331716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CLASSeeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wcupa.inov8.CLASSeeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CLASSee.app/CLASSee";
+			};
+			name = Release;
+		};
+		830625DF1CA0F30A00331716 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CLASSeeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wcupa.inov8.CLASSeeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CLASSee;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		830625E01CA0F30A00331716 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CLASSeeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wcupa.inov8.CLASSeeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CLASSee;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8306257E1CA0F30900331716 /* Build configuration list for PBXProject "CLASSee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830625CE1CA0F30A00331716 /* Debug */,
+				830625CF1CA0F30A00331716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		830625D01CA0F30A00331716 /* Build configuration list for PBXNativeTarget "CLASSee WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830625D11CA0F30A00331716 /* Debug */,
+				830625D21CA0F30A00331716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		830625D41CA0F30A00331716 /* Build configuration list for PBXNativeTarget "CLASSee WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830625D51CA0F30A00331716 /* Debug */,
+				830625D61CA0F30A00331716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		830625D81CA0F30A00331716 /* Build configuration list for PBXNativeTarget "CLASSee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830625D91CA0F30A00331716 /* Debug */,
+				830625DA1CA0F30A00331716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		830625DB1CA0F30A00331716 /* Build configuration list for PBXNativeTarget "CLASSeeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830625DC1CA0F30A00331716 /* Debug */,
+				830625DD1CA0F30A00331716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		830625DE1CA0F30A00331716 /* Build configuration list for PBXNativeTarget "CLASSeeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				830625DF1CA0F30A00331716 /* Debug */,
+				830625E01CA0F30A00331716 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8306257B1CA0F30900331716 /* Project object */;
+}

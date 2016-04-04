@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Courses Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="CoursesInterfaceController" customModule="CLASSee_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Choose a Course" textAlignment="center" id="tt9-Z5-32x"/>
+                        <separator alignment="left" id="nz9-1f-tvj"/>
+                        <table alignment="left" id="Mte-3z-Mwf">
+                            <items>
+                                <tableRow identifier="CoursesRow" id="AIg-Dj-4i7" customClass="CoursesRow" customModule="CLASSee_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="ZIL-vb-g11">
+                                        <items>
+                                            <label height="19.5" alignment="left" text="Course Name" textAlignment="left" id="R9G-h4-EZr"/>
+                                            <label alignment="left" text="Time" id="06o-zQ-1Wi">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                            <label alignment="left" text="Location" id="veD-iU-ZJt">
+                                                <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                            </label>
+                                        </items>
+                                        <connections>
+                                            <segue destination="0pU-ra-l2B" kind="push" id="OiX-ye-8vQ"/>
+                                        </connections>
+                                    </group>
+                                    <connections>
+                                        <outlet property="courseLocationLabel" destination="veD-iU-ZJt" id="Uwe-OA-iKI"/>
+                                        <outlet property="courseNameLabel" destination="R9G-h4-EZr" id="DZH-Z8-h8V"/>
+                                        <outlet property="courseTimeLabel" destination="06o-zQ-1Wi" id="sBP-4b-11a"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="coursesListTableView" destination="Mte-3z-Mwf" id="yOY-Cg-pfJ"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--Course Menu Interface Controller-->
+        <scene sceneID="JIc-fT-5CY">
+            <objects>
+                <controller id="0pU-ra-l2B" customClass="CourseMenuInterfaceController" customModule="CLASSee_WatchKit_Extension">
+                    <items>
+                        <button width="1" height="0.5" alignment="left" verticalAlignment="center" title="Attendance" id="ZVl-dl-Cib">
+                            <connections>
+                                <segue destination="lKR-Wt-bhE" kind="push" id="FWX-IS-QR8"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="0.5" alignment="left" verticalAlignment="center" title="Observations" id="mih-Bb-5ft">
+                            <connections>
+                                <segue destination="9R7-8K-AO7" kind="push" id="rNq-P8-3WZ"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="512" y="347"/>
+        </scene>
+        <!--Attendance-->
+        <scene sceneID="5Xa-eg-llG">
+            <objects>
+                <controller title="Attendance" id="lKR-Wt-bhE" customClass="AttendanceInterfaceController" customModule="CLASSee_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="44h-SA-DKp">
+                            <items>
+                                <tableRow identifier="StudentsRow" id="cLF-cd-yKP" customClass="StudentsRow" customModule="CLASSee_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="4uq-Jh-4pC">
+                                        <items>
+                                            <imageView width="0.29999999999999999" height="1" alignment="left" verticalAlignment="center" image="Person" id="lJ5-Lv-WrZ"/>
+                                            <group width="0.59999999999999998" alignment="left" layout="vertical" id="kFz-hO-wVY">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="First" id="EsV-rd-Gux"/>
+                                                    <label alignment="left" verticalAlignment="center" text="Last" id="HmN-qr-PqZ"/>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="studentFirstNameLabel" destination="EsV-rd-Gux" id="fug-Vl-WGe"/>
+                                        <outlet property="studentGroup" destination="4uq-Jh-4pC" id="gNS-fm-Sfu"/>
+                                        <outlet property="studentLastNameLabel" destination="HmN-qr-PqZ" id="qFI-MI-wMZ"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <separator alignment="left" verticalAlignment="bottom" id="1vt-80-1of"/>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Submit" id="Aeb-pF-jVy">
+                            <connections>
+                                <action selector="submitAttendance" destination="lKR-Wt-bhE" id="k8G-Ra-bEc"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="rosterTableView" destination="44h-SA-DKp" id="iF9-Oy-9It"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="785" y="199"/>
+        </scene>
+        <!--Observation-->
+        <scene sceneID="eYn-Pw-mgr">
+            <objects>
+                <controller title="Observation" id="9R7-8K-AO7" customClass="ObservationsInterfaceController" customModule="CLASSee_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="zhM-4B-04A">
+                            <items>
+                                <tableRow identifier="StudentsRow" id="fDL-3g-fAC" customClass="StudentsRow" customModule="CLASSee_WatchKit_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="B7M-qE-enR">
+                                        <items>
+                                            <imageView width="0.29999999999999999" height="1" alignment="left" verticalAlignment="center" image="Person" id="x8y-fr-26J"/>
+                                            <group width="0.59999999999999998" alignment="left" layout="vertical" id="QQh-lK-Par">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="First" id="ztU-YE-hC2"/>
+                                                    <label alignment="left" verticalAlignment="center" text="Last" id="qMJ-tK-yfH"/>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="studentFirstNameLabel" destination="ztU-YE-hC2" id="S89-J0-vtT"/>
+                                        <outlet property="studentLastNameLabel" destination="qMJ-tK-yfH" id="hBk-5j-zoe"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="rosterTableView" destination="zhM-4B-04A" id="U5W-8c-32S"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="789" y="479"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="CLASSee_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y">
+                            <items>
+                                <label width="135.5" height="52.5" alignment="left" text="Stay CLASSee!" textAlignment="center" id="vri-Eb-HPg"/>
+                            </items>
+                        </group>
+                        <group alignment="left" backgroundImage="Logo" contentMode="scaleAspectFit" id="uCw-4Q-Ouw"/>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="672"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="CLASSee_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+</document>
