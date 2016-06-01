@@ -34,6 +34,10 @@
 		83C717D61CAB818D006D5227 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C717CC1CAB7A71006D5227 /* Student.swift */; };
 		83C717D71CAB8194006D5227 /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C717CE1CAB7A83006D5227 /* Course.swift */; };
 		83C717DB1CAB83FE006D5227 /* CoursesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83C717DA1CAB83FE006D5227 /* CoursesRow.swift */; };
+		83CFB8751CB4268600D51DA2 /* ScoreObservationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CFB8741CB4268600D51DA2 /* ScoreObservationInterfaceController.swift */; };
+		83CFB8771CB426B500D51DA2 /* TallyObservationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CFB8761CB426B500D51DA2 /* TallyObservationInterfaceController.swift */; };
+		83CFB8791CB4271400D51DA2 /* AudioObservationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CFB8781CB4271400D51DA2 /* AudioObservationInterfaceController.swift */; };
+		83CFB87B1CB4282000D51DA2 /* ObservationTypeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83CFB87A1CB4282000D51DA2 /* ObservationTypeInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +131,10 @@
 		83C717D21CAB7FFE006D5227 /* AttendanceInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AttendanceInterfaceController.swift; sourceTree = "<group>"; };
 		83C717D41CAB8010006D5227 /* ObservationsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservationsInterfaceController.swift; sourceTree = "<group>"; };
 		83C717DA1CAB83FE006D5227 /* CoursesRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoursesRow.swift; sourceTree = "<group>"; };
+		83CFB8741CB4268600D51DA2 /* ScoreObservationInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreObservationInterfaceController.swift; sourceTree = "<group>"; };
+		83CFB8761CB426B500D51DA2 /* TallyObservationInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TallyObservationInterfaceController.swift; sourceTree = "<group>"; };
+		83CFB8781CB4271400D51DA2 /* AudioObservationInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioObservationInterfaceController.swift; sourceTree = "<group>"; };
+		83CFB87A1CB4282000D51DA2 /* ObservationTypeInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObservationTypeInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,9 +243,13 @@
 			isa = PBXGroup;
 			children = (
 				83C717D21CAB7FFE006D5227 /* AttendanceInterfaceController.swift */,
-				830625C11CA0F30A00331716 /* CoursesInterfaceController.swift */,
+				83CFB8781CB4271400D51DA2 /* AudioObservationInterfaceController.swift */,
 				83C717D01CAB7F9D006D5227 /* CourseMenuInterfaceController.swift */,
+				830625C11CA0F30A00331716 /* CoursesInterfaceController.swift */,
 				83C717D41CAB8010006D5227 /* ObservationsInterfaceController.swift */,
+				83CFB87A1CB4282000D51DA2 /* ObservationTypeInterfaceController.swift */,
+				83CFB8741CB4268600D51DA2 /* ScoreObservationInterfaceController.swift */,
+				83CFB8761CB426B500D51DA2 /* TallyObservationInterfaceController.swift */,
 				830625C31CA0F30A00331716 /* ExtensionDelegate.swift */,
 				830625C51CA0F30A00331716 /* NotificationController.swift */,
 				830625C71CA0F30A00331716 /* GlanceController.swift */,
@@ -484,15 +496,19 @@
 				830625C61CA0F30A00331716 /* NotificationController.swift in Sources */,
 				83C717DB1CAB83FE006D5227 /* CoursesRow.swift in Sources */,
 				830625C41CA0F30A00331716 /* ExtensionDelegate.swift in Sources */,
+				83CFB8751CB4268600D51DA2 /* ScoreObservationInterfaceController.swift in Sources */,
 				83C717D71CAB8194006D5227 /* Course.swift in Sources */,
 				83C717D31CAB7FFE006D5227 /* AttendanceInterfaceController.swift in Sources */,
+				83CFB87B1CB4282000D51DA2 /* ObservationTypeInterfaceController.swift in Sources */,
 				830625CA1CA0F30A00331716 /* ComplicationController.swift in Sources */,
 				835771B01CB17671009868C7 /* StudentsRow.swift in Sources */,
 				83C717D61CAB818D006D5227 /* Student.swift in Sources */,
 				83C717D51CAB8010006D5227 /* ObservationsInterfaceController.swift in Sources */,
+				83CFB8791CB4271400D51DA2 /* AudioObservationInterfaceController.swift in Sources */,
 				83C717D11CAB7F9D006D5227 /* CourseMenuInterfaceController.swift in Sources */,
 				830625C21CA0F30A00331716 /* CoursesInterfaceController.swift in Sources */,
 				830625C81CA0F30A00331716 /* GlanceController.swift in Sources */,
+				83CFB8771CB426B500D51DA2 /* TallyObservationInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

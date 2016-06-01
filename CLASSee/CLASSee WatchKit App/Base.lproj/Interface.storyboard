@@ -10,8 +10,12 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="CoursesInterfaceController" customModule="CLASSee_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Choose a Course" textAlignment="center" id="tt9-Z5-32x"/>
-                        <separator alignment="left" id="nz9-1f-tvj"/>
+                        <label alignment="left" text="Choose a Course" textAlignment="center" id="tt9-Z5-32x">
+                            <color key="textColor" red="0.083261104969999999" green="0.65659652589999995" blue="0.2567413462" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <separator alignment="left" id="nz9-1f-tvj">
+                            <color key="color" red="0.083261104969999999" green="0.65659652589999995" blue="0.2567413462" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
                         <table alignment="left" id="Mte-3z-Mwf">
                             <items>
                                 <tableRow identifier="CoursesRow" id="AIg-Dj-4i7" customClass="CoursesRow" customModule="CLASSee_WatchKit_Extension">
@@ -92,7 +96,9 @@
                                 </tableRow>
                             </items>
                         </table>
-                        <separator alignment="left" verticalAlignment="bottom" id="1vt-80-1of"/>
+                        <separator alignment="left" verticalAlignment="bottom" id="1vt-80-1of">
+                            <color key="color" red="0.083261104969999999" green="0.65659652589999995" blue="0.2567413462" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
                         <button width="1" alignment="center" verticalAlignment="bottom" title="Submit" id="Aeb-pF-jVy">
                             <connections>
                                 <action selector="submitAttendance" destination="lKR-Wt-bhE" id="k8G-Ra-bEc"/>
@@ -128,6 +134,7 @@
                                     <connections>
                                         <outlet property="studentFirstNameLabel" destination="ztU-YE-hC2" id="S89-J0-vtT"/>
                                         <outlet property="studentLastNameLabel" destination="qMJ-tK-yfH" id="hBk-5j-zoe"/>
+                                        <segue destination="tEp-F8-tRj" kind="push" id="qcP-mp-PKF"/>
                                     </connections>
                                 </tableRow>
                             </items>
@@ -140,6 +147,124 @@
             </objects>
             <point key="canvasLocation" x="789" y="479"/>
         </scene>
+        <!--Observation Type Interface Controller-->
+        <scene sceneID="AlQ-a8-fc4">
+            <objects>
+                <controller id="tEp-F8-tRj" customClass="ObservationTypeInterfaceController" customModule="CLASSee_WatchKit_Extension">
+                    <items>
+                        <button width="1" height="0.33000000000000002" alignment="left" title="Text" id="aQJ-DJ-2ll">
+                            <connections>
+                                <action selector="promptTextObservation" destination="tEp-F8-tRj" id="Rtj-6K-Mmk"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="0.33000000000000002" alignment="left" title="Score" id="0FN-ag-kDO">
+                            <connections>
+                                <segue destination="u0t-rk-EhD" kind="push" id="D4t-KI-TQm"/>
+                            </connections>
+                        </button>
+                        <button width="1" height="0.33000000000000002" alignment="left" title="Tally" id="szT-W5-GwW">
+                            <connections>
+                                <segue destination="iqv-Cy-J9S" kind="push" id="Rsd-pe-npz"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1084" y="479"/>
+        </scene>
+        <!--Score Observation Interface Controller-->
+        <scene sceneID="dyc-Cr-O6s">
+            <objects>
+                <controller id="u0t-rk-EhD" customClass="ScoreObservationInterfaceController" customModule="CLASSee_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.20000000000000001" alignment="left" layout="vertical" id="Gek-x4-nBd">
+                            <items>
+                                <label alignment="left" text="Enter Score:" id="iKA-XE-87N">
+                                    <color key="textColor" red="0.083261104969999999" green="0.65659652589999995" blue="0.2567413462" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                                <separator alignment="left" id="jOs-Cd-FrK">
+                                    <color key="color" red="0.083261104969999999" green="0.65659652589999995" blue="0.2567413462" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                            </items>
+                        </group>
+                        <group width="1" height="0.20000000000000001" alignment="left" id="pbA-RP-OoM">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="0.0" textAlignment="center" id="o8s-ZH-V9i"/>
+                                <label alignment="center" verticalAlignment="center" text=" / 10.0" id="nir-C4-v1O"/>
+                            </items>
+                        </group>
+                        <slider width="1" height="0.29999999999999999" alignment="left" maximum="10" steps="10" id="mAX-c1-d5n">
+                            <connections>
+                                <action selector="updateScore:" destination="u0t-rk-EhD" id="eMm-fm-K71"/>
+                            </connections>
+                        </slider>
+                        <button width="1" height="0.29999999999999999" alignment="left" title="Submit" id="ZT3-eG-dpA">
+                            <connections>
+                                <action selector="submitScore" destination="u0t-rk-EhD" id="7g6-Bh-3Ai"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="currentScoreLabel" destination="o8s-ZH-V9i" id="sHi-qp-mX8"/>
+                        <outlet property="submitScore" destination="ZT3-eG-dpA" id="YUy-3C-ls6"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1388" y="479"/>
+        </scene>
+        <!--Tally Observation Interface Controller-->
+        <scene sceneID="38c-VR-uut">
+            <objects>
+                <controller id="iqv-Cy-J9S" customClass="TallyObservationInterfaceController" customModule="CLASSee_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="0.20000000000000001" alignment="left" layout="vertical" id="TUt-v8-fkL">
+                            <items>
+                                <label alignment="left" text="Keep Tally:" id="8BW-7l-pdi">
+                                    <color key="textColor" red="0.083261104969999999" green="0.65659652589999995" blue="0.2567413462" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                                <separator alignment="left" id="Sd9-vk-M3V">
+                                    <color key="color" red="0.083261104969999999" green="0.65659652589999995" blue="0.2567413462" alpha="1" colorSpace="calibratedRGB"/>
+                                </separator>
+                            </items>
+                        </group>
+                        <group width="1" height="0.5" alignment="left" id="fUy-kO-uLO">
+                            <items>
+                                <button width="0.34999999999999998" height="1" alignment="left" title="-" enabled="NO" id="0q0-FL-RCV">
+                                    <fontDescription key="font" type="system" pointSize="42"/>
+                                    <connections>
+                                        <action selector="subtractFromTally" destination="iqv-Cy-J9S" id="v6u-Ai-gQe"/>
+                                    </connections>
+                                </button>
+                                <button width="0.34999999999999998" height="1" alignment="right" title="+" id="cwS-k2-7T9">
+                                    <fontDescription key="font" type="system" pointSize="42"/>
+                                    <connections>
+                                        <action selector="addToTally" destination="iqv-Cy-J9S" id="Tnh-fc-TxN"/>
+                                    </connections>
+                                </button>
+                                <group width="0.29999999999999999" height="1" alignment="center" id="ZWQ-Jt-wwo">
+                                    <items>
+                                        <label alignment="center" verticalAlignment="center" text="0" id="Tma-Ga-ZOn">
+                                            <color key="textColor" red="0.083261104969999999" green="0.65659652589999995" blue="0.2567413462" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="28"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <button width="1" height="0.29999999999999999" alignment="left" title="Submit" id="uMa-Do-aql">
+                            <connections>
+                                <action selector="submitTally" destination="iqv-Cy-J9S" id="8HN-rd-sMJ"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="currentTallyLabel" destination="Tma-Ga-ZOn" id="fXN-nD-jcI"/>
+                        <outlet property="subtractTallyButton" destination="0q0-FL-RCV" id="IDg-qq-vlM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1388" y="827"/>
+        </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
             <objects>
@@ -147,7 +272,9 @@
                     <items>
                         <group alignment="left" id="t8f-Gd-c4y">
                             <items>
-                                <label width="135.5" height="52.5" alignment="left" text="Stay CLASSee!" textAlignment="center" id="vri-Eb-HPg"/>
+                                <label width="135.5" height="52.5" alignment="left" text="Stay Classee!" textAlignment="center" id="vri-Eb-HPg">
+                                    <color key="textColor" red="0.083261104969999999" green="0.65659652589999995" blue="0.2567413462" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
                             </items>
                         </group>
                         <group alignment="left" backgroundImage="Logo" contentMode="scaleAspectFit" id="uCw-4Q-Ouw"/>
@@ -181,5 +308,5 @@
             <point key="canvasLocation" x="553" y="1001"/>
         </scene>
     </scenes>
-    <color key="tintColor" red="0.50196078430000002" green="0.50196078430000002" blue="0.50196078430000002" alpha="1" colorSpace="calibratedRGB"/>
+    <color key="tintColor" red="0.083261104973621575" green="0.65659652592097439" blue="0.25674134624226408" alpha="1" colorSpace="calibratedRGB"/>
 </document>

@@ -21,21 +21,4 @@ class Course: NSObject {
         self.location = location;
         self.studentsList = studentsList;
     }
-    
-    func getName() -> String {
-        return name;
-    }
-    
-    func getTime() -> String {
-        return time;
-    }
-    
-    func getLocation() -> String{
-        return location;
-    }
-    
-    func getStudentsList() -> [Student] {
-        return studentsList;
-    }
-    
 }

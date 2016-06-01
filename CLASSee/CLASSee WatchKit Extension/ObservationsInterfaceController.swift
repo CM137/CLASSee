@@ -54,10 +54,15 @@ class ObservationsInterfaceController: WKInterfaceController {
         for i in 0 ..< students.count {
             if let row = rosterTableView.rowControllerAtIndex(i) as? StudentsRow {
                 // Set the name labels
-                row.studentFirstNameLabel.setText(students[i].getFirstName());
-                row.studentLastNameLabel.setText(students[i].getLastName());
+                row.studentFirstNameLabel.setText(students[i].firstName);
+                row.studentLastNameLabel.setText(students[i].lastName);
             }
         }
+    }
+    
+    // Send the course name with the segue for display in next screen
+    override func contextForSegueWithIdentifier(segueIdentifier: String, inTable table: WKInterfaceTable, rowIndex: Int) -> AnyObject? {
+        return students[rowIndex].lastName;
     }
     
 }

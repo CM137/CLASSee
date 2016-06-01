@@ -1,18 +1,18 @@
 //
-//  CourseMenuInterfaceController.swift
+//  AudioObservationInterfaceController.swift
 //  CLASSee
 //
-//  Created by Christopher Mason on 3/29/16.
+//  Created by Christopher Mason on 4/5/16.
 //  Copyright © 2016 West Chester University. All rights reserved.
 //
 
 import WatchKit
 import Foundation
 
-class CourseMenuInterfaceController: WKInterfaceController {
-
-    // For holding the course name sent with the segue to this controller
-    var courseName = "";
+class AudioObservationInterfaceController: WKInterfaceController {
+    
+    // For holding the student name sent with the segue to this controller
+    var studentName = "";
     
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
@@ -20,9 +20,9 @@ class CourseMenuInterfaceController: WKInterfaceController {
         // Configure interface objects here.
         
         // Set the page title to the course name of the course that was selected
-        if let courseName = context as? String {
-            self.courseName = courseName;
-            self.setTitle(courseName);
+        if let studentName = context as? String {
+            self.studentName = studentName;
+            self.setTitle(studentName);
         }
     }
     

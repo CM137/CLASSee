@@ -8,32 +8,25 @@
 
 import Foundation
 
+// Enum for different attendance statuses
+enum attendanceStatus {
+    case present
+    case absent
+    case late
+}
+
 class Student: NSObject {
     var firstName: String;
     var lastName: String;
     var observations: [String];
-    var inToday: Bool;
+    var aStatus: attendanceStatus;
+    var tallyValue: Int;
     
     init(firstName: String, lastName: String, observations: [String]) {
         self.firstName = firstName;
         self.lastName = lastName;
         self.observations = observations;
-        self.inToday = false;
-    }
-    
-    func getFirstName() -> String {
-        return firstName;
-    }
-    
-    func getLastName() -> String {
-        return lastName;
-    }
-    
-    func getAttendanceStatus() -> Bool {
-        return inToday;
-    }
-    
-    func setAttendanceStatus(status: Bool) {
-        self.inToday = status;
+        self.aStatus = .absent;
+        self.tallyValue = 0;
     }
 }

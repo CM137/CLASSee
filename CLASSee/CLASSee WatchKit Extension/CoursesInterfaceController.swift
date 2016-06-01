@@ -48,15 +48,15 @@ class CoursesInterfaceController: WKInterfaceController {
         // Row controller of special class type CoursesRow (necessary for table view controllers)
         for i in 0 ..< courses.count {
             if let row = coursesListTableView.rowControllerAtIndex(i) as? CoursesRow {
-                row.courseNameLabel.setText(courses[i].getName());
-                row.courseTimeLabel.setText(courses[i].getTime());
-                row.courseLocationLabel.setText(courses[i].getLocation());
+                row.courseNameLabel.setText(courses[i].name);
+                row.courseTimeLabel.setText(courses[i].time);
+                row.courseLocationLabel.setText(courses[i].location);
             }
         }
     }
     
     // Send the course name with the segue for display in next screen
     override func contextForSegueWithIdentifier(segueIdentifier: String, inTable table: WKInterfaceTable, rowIndex: Int) -> AnyObject? {
-        return courses[rowIndex].getName();
+        return courses[rowIndex].name;
     }
 }

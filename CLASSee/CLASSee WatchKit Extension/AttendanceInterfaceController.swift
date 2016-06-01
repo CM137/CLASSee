@@ -14,6 +14,7 @@ class AttendanceInterfaceController: WKInterfaceController {
     // Outlet for the table view listing students on the roster
     @IBOutlet var rosterTableView: WKInterfaceTable!
     
+    //TODO: Fetch data from somewhere
     // Dummy student data for demo
     let students: [Student] = [Student(firstName: "John", lastName: "Appleseed", observations: []),
                                Student(firstName: "Larry", lastName: "Brightside", observations: []),
@@ -46,18 +47,27 @@ class AttendanceInterfaceController: WKInterfaceController {
     
     // Demo attendance state change when pressing on a student in list
     // Changes from red to green for checking in
-    // Changes from green to red for checking out
+    // Changes from green to yellow for marking late
+    // Changes from yellow to red for checking out
     override func table(table: WKInterfaceTable, didSelectRowAtIndex rowIndex: Int) {
-        // Change attendance status on record
-        students[rowIndex].setAttendanceStatus(!students[rowIndex].getAttendanceStatus());
         
-        // Check if student is checked in or not and change to correct color
-        if (students[rowIndex].getAttendanceStatus()) {
+        // Change attendance status on record and change color of row
+        switch students[rowIndex].aStatus {
+        case .absent:
             (table.rowControllerAtIndex(rowIndex) as! StudentsRow).setStudentBackgroundColor(UIColor.init(red: 0.0, green: 1.0, blue: 0.0, alpha: 0.5));
-        } else {
+            students[rowIndex].aStatus = .present;
+            break;
+        case .present:
+            (table.rowControllerAtIndex(rowIndex) as! StudentsRow).setStudentBackgroundColor(UIColor.init(red: 1.0, green: 1.0, blue: 0.0, alpha: 0.5));
+            students[rowIndex].aStatus = .late;
+            break;
+        case .late:
             (table.rowControllerAtIndex(rowIndex) as! StudentsRow).setStudentBackgroundColor(UIColor.init(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.5));
+            students[rowIndex].aStatus = .absent;
+            break;
         }
     }
+    
     
     // Setup the table view with students
     func setupRosterTable(students: [Student]) {
@@ -68,10 +78,23 @@ class AttendanceInterfaceController: WKInterfaceController {
         // Row controller of special class type StudentsRow (necessary for table view controllers)
         for i in 0 ..< students.count {
             if let row = rosterTableView.rowControllerAtIndex(i) as? StudentsRow {
-                // Set the name labels and default color to red
-                row.studentFirstNameLabel.setText(students[i].getFirstName());
-                row.studentLastNameLabel.setText(students[i].getLastName());
-                row.setStudentBackgroundColor(UIColor.init(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.5));
+                // Set the name labels
+                row.studentFirstNameLabel.setText(students[i].firstName);
+                row.studentLastNameLabel.setText(students[i].lastName);
+                
+                // Set color based on attendance status
+                // Red - Absent, Green - Present, Yellow - Late
+                switch students[i].aStatus {
+                case .absent:
+                    row.setStudentBackgroundColor(UIColor.init(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.5));
+                    break;
+                case .present:
+                    row.setStudentBackgroundColor(UIColor.init(red: 0.0, green: 1.0, blue: 0.0, alpha: 0.5));
+                    break;
+                case .late:
+                    row.setStudentBackgroundColor(UIColor.init(red: 1.0, green: 1.0, blue: 0.0, alpha: 0.5));
+                    break;
+                }
             }
         }
     }
@@ -80,15 +103,15 @@ class AttendanceInterfaceController: WKInterfaceController {
     func showPopup(){
         
         // Currently just pops out of attendance view for demo
-        // TODO: Actuall submit attendance
+        // TODO: Actually submit attendance
         let h0 = {
             self.popController();
         };
         
         let action1 = WKAlertAction(title: "Yes", style: .Default, handler:h0);
-        let action2 = WKAlertAction(title: "No", style: .Destructive) {};
+        let action2 = WKAlertAction(title: "No", style: .Cancel) {};
         
-        presentAlertControllerWithTitle("", message: "Are you sure you want to submit attendance?", preferredStyle: .ActionSheet, actions: [action1, action2]);
+        presentAlertControllerWithTitle("", message: "Are you sure you want to submit the attendance?", preferredStyle: .Alert, actions: [action1, action2]);
     }
     
     
